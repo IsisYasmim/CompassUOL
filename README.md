@@ -16,9 +16,11 @@ desenvolvido em Flutter.
 
 
 
-<img align = "right" width="100" height="100" hspace="2" src="https://picsum.photos/100/100">
+<img align = "right" width="125" height="125" hspace="3" src="https://i.imgur.com/9KmYrKv.jpg">
 
 Tenho vários hobbies aleatórios, como jogos, animes, costura e cubos mágicos; de vez em quando faço cosplay. Sou apaixonada pela cor rosa e por gatinhos! Também sou seguidora fiel de Kant e tento aplicar o conceito de imperativo categórico onde possível.
+ 
+Ao lado mostro a minha coleção de cubos mágicos!
 
 # Conteúdo sendo aprendido
 ## Sprint 1
