@@ -1,6 +1,6 @@
 ![reversal](https://capsule-render.vercel.app/api?type=waving&text=Compass%20UOL&fontSize=50&animation=fadeIn&height=210&fontAlignY=30&desc=Repositório%20do%20Programa%20de%20Bolsas&descSize=25&descAlignY=50&color=gradient&customColorList=27)
 # Sobre mim
-Olá! Meu nome é Ísis Yasmim, venho de Manaus mas atualmente resido na cidade de Medianeira, no oeste do Paraná. 
+Olá! Meu nome é Ísis Yasmim, tenho 23 anos e venho de Manaus mas atualmente resido na cidade de Medianeira, no oeste do Paraná. 
 
 Faço o curso de __ciência da computação__ na UTFPR, e estou no terceiro período. Minha experiência na área
 consiste em um projeto de conclusão de curso do ensino médio técnico que desenvolvi em Java e
@@ -9,7 +9,7 @@ desenvolvido em Flutter.
 
 <p align = "center">
 <a href="https://github.com/anuraghazra/github-readme-stats">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Isisyasmim&size_weight=0.5&count_weight=1&layout=donut" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Isisyasmim&size_weight=0.5&count_weight=1&layout=donut&theme=tokyonight" />
 </a>
 </p>
 
