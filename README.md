@@ -28,5 +28,7 @@ Ao lado mostro a minha coleção de cubos mágicos!
 * Principais conceitos do Git e Github: Compreendendo a estrutura de um repositório Git, como branches, commits, tags e HEAD, além dos comandos básicos como init, clone, add, push e pull. Aprendendo a estruturação correta de um repositório simulando o uso real numa empresa, com branching e mesclagem (merging), e também a reverter alterações e desfazer commits.
 ### Linux
 * Conceitos de Linux para desenvolvedores: Aprendendo comandos básicos de terminal, como cd, ls, clear, entre outros. Entendendo como estruturar tanto diretórios quanto arquivos e como os criar, alterar, remover, copiar, mover e achar, e também a como utilizar os editores de texto nano e vim. Gerenciando pacotes e aplicativos, incluindo a remoção, upgrade e update dos mesmos, e também gerenciando usuários.
+### SQL
+* SQL para análise de dados: Vendo comandos básicos, como a recuperar dados de uma tabela, filtrar registros, ordenar resultados e limitar o número de linhas, além de como agrupar dados por categorias ou critérios específicos. Aprendendo também a realizar cálculos e resumos estatísticos nos dados, como soma, contagem, média, máximo e mínimo.
 
 
