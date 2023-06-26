@@ -30,5 +30,5 @@ Ao lado mostro a minha coleção de cubos mágicos!
 * Conceitos de Linux para desenvolvedores: Aprendendo comandos básicos de terminal, como cd, ls, clear, entre outros. Entendendo como estruturar tanto diretórios quanto arquivos e como os criar, alterar, remover, copiar, mover e achar, e também a como utilizar os editores de texto nano e vim. Gerenciando pacotes e aplicativos, incluindo a remoção, upgrade e update dos mesmos, e também gerenciando usuários.
 ### SQL
 * SQL para análise de dados: Vendo comandos básicos, como a recuperar dados de uma tabela, filtrar registros, ordenar resultados e limitar o número de linhas, além de como agrupar dados por categorias ou critérios específicos. Aprendendo também a realizar cálculos e resumos estatísticos nos dados, como soma, contagem, média, máximo e mínimo.
-
-
+### Big Data
+* Big Data Fundamentos: Foi apresentado uma introdução abrangente aos principais conceitos e tecnologias relacionadas ao processamento e análise de grandes volumes de dados. Durante o curso, foi ensinado sobre armazenamentos como bancos de dados relacionais, bancos de dados NoSQL, sistemas de arquivos distribuídos e sistemas de armazenamento em nuvem, como também o curso abrange os fundamentos da computação em nuvem e seu papel no contexto do Big Data. Também foi ensinado os conceitos de MLOps e DataOps, Dados como Serviço (Data-as-a-Service) e ETL (Extração, Transformação e Carregamento).
