@@ -40,3 +40,11 @@ Ao lado mostro a minha coleção de cubos mágicos!
 * Python do Básico ao Avançado: Houve uma introdução à programação com conceitos básicos, estrutura de um programa Python, tipos de dados e controle de fluxo, assim como apresentação de conceitos de listas, tuplas, conjuntos e dicionários. Foi ensinado a manipulação de arquivos: leitura e escrita de arquivos, assim como a criação e uso de funções. Também foi ensinado conceitos básicos e conceitos avançados de Programação Orientada a Objetos, como herança, polimorfismo, encapsulamento e entre outros.
 
 ## Sprint 4
+### Programação Funcional com Python
+* Programação Funcional com Python: Foi ensinado conceitos de programação funcional como funções de primeira classe, o uso de lambda, imutabilidade de dados, o uso das funções map, filter e reduce e funções de alta ordem.
+
+### Docker
+* Docker para Desenvolvedores: Nesse curso é apresentado tanto ideias básicas como avançadas do uso de Docker. É ensinado a criar, deletar, buildar e utilizar imagens abrangendo não só uma linguagem, mas várias. Foi visto conceito de containers, como criar, deletar, mostrar listas, nomear e usar de forma iterativa. Além disso, houve uma ampla compreensão dos conceitos de volume em Docker, Networks, YAML e Kubernetes.
+
+### Estatística com Python
+* Estatística Descritiva com Python: É visto e aprendido como utilizar Python para diversos usos básicos de estatística, assim como é visto esses mesmos conceitos necessários para analisar dados. Em Python, existem várias bibliotecas poderosas, como NumPy, pandas e matplotlib, que facilitam a realização de análises estatísticas descritivas. São utilizadas para apresentar a média, moda e mediana de dados, assim como é mostrado a forma de calcular variância, amplitude, desvio padrão e CV. Há também formas de plotar diversos gráficos utilizando as bibliotecas apresentadas.
