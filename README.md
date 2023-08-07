@@ -59,6 +59,9 @@ Ao lado mostro a minha coleção de cubos mágicos!
 
 * AWS Exam Prep:  O curso tem como objetivo ensinar a se preparar adequadamente para o exame de certificação AWS Certified Cloud Practitioner, abordando os principais tópicos e competências necessárias para obter a certificação, junto com perguntas e exemplos pertinentes ao material aprendido previamente. O curso não oferece badge, então o print para comprovação de conclusão está na pasta Sprint5.
 
+* Data & Analytics - PB - AWS 5/10: Nesse exercício, é pedido para criar uma instância EC2 com as seguintes tags: Project (use o valor Programa de Bolsas), CostCenter (use o valor Data & Analytics), Name (valor a seu interesse). Estava obtendo erro de autorização por conta da dificuldade no entendimento da criação das tags, porém com a ajuda do Patrick e do Lucas Ricieri pude alterar as tags para incluir Instâncias + Volumes e consegui concluir o exercício proposto.
+
+
 ### Cloud Quest - Missões Feitas
 A badge recebida pelo jogo pode ser acessada por [esse link.](https://www.credly.com/badges/fbcf800d-c345-4332-a9b5-d94093799f21/public_url) Abaixo faço uma descrição do que foi feito em cada laboratório dentro do jogo:
 * Cloud Computing Essentials: Implementei uma instância de Amazon S3 para hosting de um website estático.
