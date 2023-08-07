@@ -48,3 +48,38 @@ Ao lado mostro a minha coleção de cubos mágicos!
 
 ### Estatística com Python
 * Estatística Descritiva com Python: É visto e aprendido como utilizar Python para diversos usos básicos de estatística, assim como é visto esses mesmos conceitos necessários para analisar dados. Em Python, existem várias bibliotecas poderosas, como NumPy, pandas e matplotlib, que facilitam a realização de análises estatísticas descritivas. São utilizadas para apresentar a média, moda e mediana de dados, assim como é mostrado a forma de calcular variância, amplitude, desvio padrão e CV. Há também formas de plotar diversos gráficos utilizando as bibliotecas apresentadas.
+
+## Sprint 5
+### AWS Skill Builder
+* AWS Partner Sales Accreditation: No curso foi apresentado os principais serviços da AWS, e também foi demonstrado a metodologia de venda desses serviços, assim como identificar oportunidades, construir propostas e entender as necessidades do cliente. É orientado sobre como entender a estrutura de preços da AWS e como apresentar aos clientes as opções de licenciamento mais adequadas. A badge recebida do curso pode ser acessada por [esse link.](https://www.credly.com/badges/403ea6f9-335e-40fa-adf4-658079015c42/public_url)
+
+* AWS Partner - Accreditation (Technical): O curso explora os serviços fundamentais da AWS, como Amazon EC2 (Elastic Compute Cloud), Amazon S3 (Simple Storage Service), Amazon RDS (Relational Database Service), entre outros. Foi aprendido a projetar e implementar arquiteturas escaláveis e resilientes na AWS, usando práticas recomendadas e padrões arquiteturais. A badge recebida do curso pode ser acessada por [esse link.](https://www.credly.com/badges/ab3439f7-3066-4245-8781-bc4464871fe9/public_url)
+
+* AWS Partner Cloud Economics Accreditation: O curso é uma iniciativa da AWS desenvolvida para capacitar profissionais de vendas e negócios de parceiros a compreender e comunicar efetivamente os princípios da economia em nuvem da AWS. O objetivo do curso é ensinar como a adoção da nuvem pode impactar os custos e benefícios dos clientes, e abrange uma variedade de tópicos relacionados à economia em nuvem. A badge recebida do curso por ser acessada por [esse link.](https://www.credly.com/badges/db9714ab-78ab-42b0-9582-b519f01aa673/public_url)
+
+* AWS Exam Prep:  O curso tem como objetivo ensinar a se preparar adequadamente para o exame de certificação AWS Certified Cloud Practitioner, abordando os principais tópicos e competências necessárias para obter a certificação, junto com perguntas e exemplos pertinentes ao material aprendido previamente. O curso não oferece badge, então o print para comprovação de conclusão está na pasta Sprint5.
+
+### Cloud Quest - Missões Feitas
+A badge recebida pelo jogo pode ser acessada por [esse link.](https://www.credly.com/badges/fbcf800d-c345-4332-a9b5-d94093799f21/public_url) Abaixo faço uma descrição do que foi feito em cada laboratório dentro do jogo:
+* Cloud Computing Essentials: Implementei uma instância de Amazon S3 para hosting de um website estático.
+
+* Cloud First Steps: Criei, a partir de uma imagem, uma segunda instância em uma Zona de Disponibilidade diferente. Tive certa dificuldade de início, mas ao pesquisar no google descobri que era apenas atribuir a uma outra subnet.
+
+* Computing Solutions: Após parar a instância EC2, foi possível mudar o tipo dela para m4.large.
+
+* Networking Concepts: Ativei a comunicação do VPC com a internet a partir das rotas de tabela e grupos de seguramça.
+
+* Databases in Practice: Criei uma replica de leitura da Amazon RDS criada durante o período de prática.
+
+* Connecting VPCs: Usando conceitos de emparelhamento apresentados, estabeleci uma conexão entre duas instâncias (Developer e Finance). Não entendi os passos de primeira, portanto revi a prática dessa quest mais uma vez.
+
+* First NoSQL Database: Usando a tabela da Amazon DynamoDB criada durante a sessão de prática, adicionei mais um atributo a um novo item criado.
+
+* File Systems in the Cloud: Usando Amazon EFS, criei múltiplos pontos de acesso ao banco de dados existente.
+
+* Auto-healing and Scaling Applications: Com os conceitos de Auto Scaling disponíveis no EC2, implementei um horário fixo de desligamento dos servidores.
+
+* Highly Available Web Applications: Usando AWS Application Load Balancer (ALB) e Auto Scaling, foi possível aumentar a disponibilidade do site em tempos de pouco uso dos servidores e alto uso dos servidores. 
+
+* Core Security Concepts: Usei conceitos de IAM, como permissões e usuários, para criar um grupo de usuários com acesso restrito.
+* Cloud Economics: Fiz uma estimativa de preço no site da Amazon para um caso específico.
