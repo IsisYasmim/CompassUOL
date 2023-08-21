@@ -86,3 +86,31 @@ A badge recebida pelo jogo pode ser acessada por [esse link.](https://www.credly
 
 * Core Security Concepts: Usei conceitos de IAM, como permissões e usuários, para criar um grupo de usuários com acesso restrito.
 * Cloud Economics: Fiz uma estimativa de preço no site da Amazon para um caso específico.
+
+## Sprint 6
+### AWS Partner
+* Data Analytics on AWS: O curso oferece acesso a treinamento especializado, recursos técnicos e materiais educacionais que ajudam os parceiros de negócios a desenvolverem suas competências em análise de dados na AWS, com exemplo de cenários e exercícios práticos.
+### AWS Skill Builder
+* Data Analytics Fundamentals: Nesse curso foi aprendido um conhecimento de base sobre conceitos e práticas relacionadas à análise de dados de Big Data, como o significado dos quatro V's (Volume, Velocidade, Variedade e Veracidade) assim como os elementos atrelados à esses conceitos.
+
+* Introduction to Amazon Kinesis Streams:  O vídeo ofertado tem o objetivo de explicar os conceitos fundamentais e o funcionamento do serviço Amazon Kinesis Streams. 
+
+* Introduction to Amazon Kinesis Analytics: É um breve vídeo que demonstra o uso do Amazon Kinesis para análise de dados, com um simples overview.
+
+* Introduction to Amazon Elastic MapReduce (EMR):  É uma introdução abrangente ao serviço EMR da AWS, projetado para equipar os participantes com as habilidades necessárias para processar e analisar grandes volumes de dados de maneira escalável e eficiente na plataforma AWS.
+
+* Introduction to Amazon Athena:  O curso é uma introdução ao Amazon Athena, explicando que é um serviço de análise de dados sem servidor que permite executar consultas SQL em dados armazenados no Amazon S3, sem a necessidade de configuração de infraestrutura.
+
+* Introduction to Amazon Quicksight: É ensinado o conceito e uso do Amazon QuickSight, destacando que é uma ferramenta de análise de dados que permite criar visualizações interativas e painéis de controle a partir de dados armazenados em diferentes fontes.
+
+* Introduction to AWS IoT Analytics: Aprende-se o uso do AWS IoT Analytics, destacando seu papel na análise de dados provenientes de dispositivos IoT para obter insights valiosos.
+
+* Getting Started with Amazon Redshift:  É uma visão geral do Amazon Redshift, explicando como usá-lo no armazenamento de grandes volumes de dados.
+
+* Deep Dive into Concepts and Tools for Analyzing Streaming Data: O curso explica maneiras que são feitas as análises de queries, como ordená-las e como fazer uso desses conceitos com ferramentas da AWS.
+
+* Best Practices for Data Warehousing with Amazon Redshift: É oferecido uma visão abrangente das melhores práticas para projetar, configurar e gerenciar eficazmente um data warehouse usando o Amazon Redshift.
+
+* Serverless Analytics: É ensinado como projetar, implementar e gerenciar soluções de análise de dados usando arquiteturas sem servidor e serviços na nuvem, com ênfase nas melhores práticas, ferramentas e casos de uso. 
+
+* Why Analytics for Games: Concentra-se na importância de usar análises na indústria de jogos para melhorar o desenvolvimento de jogos, a experiência do usuário e os retornos comerciais.
