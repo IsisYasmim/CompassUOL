@@ -23,21 +23,35 @@ Tenho vários hobbies aleatórios, como jogos, animes, costura e cubos mágicos;
 Ao lado mostro a minha coleção de cubos mágicos!
 
 # Conteúdo sendo aprendido
-## Sprint 1
+<details>
+<summary>Sprint 1</summary>
+
 ### Git/Github
 * Principais conceitos do Git e Github: Compreendendo a estrutura de um repositório Git, como branches, commits, tags e HEAD, além dos comandos básicos como init, clone, add, push e pull. Aprendendo a estruturação correta de um repositório simulando o uso real numa empresa, com branching e mesclagem (merging), e também a reverter alterações e desfazer commits.
 ### Linux
 * Conceitos de Linux para desenvolvedores: Aprendendo comandos básicos de terminal, como cd, ls, clear, entre outros. Entendendo como estruturar tanto diretórios quanto arquivos e como os criar, alterar, remover, copiar, mover e achar, e também a como utilizar os editores de texto nano e vim. Gerenciando pacotes e aplicativos, incluindo a remoção, upgrade e update dos mesmos, e também gerenciando usuários.
+</details>
+
+<details>
+<summary>Sprint 2</summary>
 
 ## Sprint 2
 ### SQL
 * SQL para análise de dados: Vendo comandos básicos, como a recuperar dados de uma tabela, filtrar registros, ordenar resultados e limitar o número de linhas, além de como agrupar dados por categorias ou critérios específicos. Aprendendo também a realizar cálculos e resumos estatísticos nos dados, como soma, contagem, média, máximo e mínimo.
 ### Big Data
 * Big Data Fundamentos: Foi apresentado uma introdução abrangente aos principais conceitos e tecnologias relacionadas ao processamento e análise de grandes volumes de dados. Durante o curso, foi ensinado sobre armazenamentos como bancos de dados relacionais, bancos de dados NoSQL, sistemas de arquivos distribuídos e sistemas de armazenamento em nuvem, como também o curso abrange os fundamentos da computação em nuvem e seu papel no contexto do Big Data. Também foi ensinado os conceitos de MLOps e DataOps, Dados como Serviço (Data-as-a-Service) e ETL (Extração, Transformação e Carregamento).
+</details>
+
+<details>
+<summary>Sprint 3</summary>
 
 ## Sprint 3
 ### Python
 * Python do Básico ao Avançado: Houve uma introdução à programação com conceitos básicos, estrutura de um programa Python, tipos de dados e controle de fluxo, assim como apresentação de conceitos de listas, tuplas, conjuntos e dicionários. Foi ensinado a manipulação de arquivos: leitura e escrita de arquivos, assim como a criação e uso de funções. Também foi ensinado conceitos básicos e conceitos avançados de Programação Orientada a Objetos, como herança, polimorfismo, encapsulamento e entre outros.
+</details>
+
+<details>
+<summary>Sprint 4</summary>
 
 ## Sprint 4
 ### Programação Funcional com Python
@@ -48,6 +62,10 @@ Ao lado mostro a minha coleção de cubos mágicos!
 
 ### Estatística com Python
 * Estatística Descritiva com Python: É visto e aprendido como utilizar Python para diversos usos básicos de estatística, assim como é visto esses mesmos conceitos necessários para analisar dados. Em Python, existem várias bibliotecas poderosas, como NumPy, pandas e matplotlib, que facilitam a realização de análises estatísticas descritivas. São utilizadas para apresentar a média, moda e mediana de dados, assim como é mostrado a forma de calcular variância, amplitude, desvio padrão e CV. Há também formas de plotar diversos gráficos utilizando as bibliotecas apresentadas.
+</details>
+
+<details>
+<summary>Sprint 5</summary>
 
 ## Sprint 5
 ### AWS Skill Builder
@@ -86,6 +104,10 @@ A badge recebida pelo jogo pode ser acessada por [esse link.](https://www.credly
 
 * Core Security Concepts: Usei conceitos de IAM, como permissões e usuários, para criar um grupo de usuários com acesso restrito.
 * Cloud Economics: Fiz uma estimativa de preço no site da Amazon para um caso específico.
+</details>
+
+<details>
+<summary>Sprint 6</summary>
 
 ## Sprint 6
 ### AWS Partner
@@ -114,3 +136,4 @@ A badge recebida pelo jogo pode ser acessada por [esse link.](https://www.credly
 * Serverless Analytics: É ensinado como projetar, implementar e gerenciar soluções de análise de dados usando arquiteturas sem servidor e serviços na nuvem, com ênfase nas melhores práticas, ferramentas e casos de uso. 
 
 * Why Analytics for Games: Concentra-se na importância de usar análises na indústria de jogos para melhorar o desenvolvimento de jogos, a experiência do usuário e os retornos comerciais.
+</details>
