@@ -26,6 +26,7 @@ Ao lado mostro a minha coleção de cubos mágicos!
 <details>
 <summary>Sprint 1</summary>
 
+## Sprint 1
 ### Git/Github
 * Principais conceitos do Git e Github: Compreendendo a estrutura de um repositório Git, como branches, commits, tags e HEAD, além dos comandos básicos como init, clone, add, push e pull. Aprendendo a estruturação correta de um repositório simulando o uso real numa empresa, com branching e mesclagem (merging), e também a reverter alterações e desfazer commits.
 ### Linux
@@ -136,4 +137,29 @@ A badge recebida pelo jogo pode ser acessada por [esse link.](https://www.credly
 * Serverless Analytics: É ensinado como projetar, implementar e gerenciar soluções de análise de dados usando arquiteturas sem servidor e serviços na nuvem, com ênfase nas melhores práticas, ferramentas e casos de uso. 
 
 * Why Analytics for Games: Concentra-se na importância de usar análises na indústria de jogos para melhorar o desenvolvimento de jogos, a experiência do usuário e os retornos comerciais.
+</details>
+
+<details>
+<summary>Sprint 7</summary>
+
+## Sprint 7
+### Hadoop
+* Learn By Example - Hadoop, MapReduce for Big Data problems: Este curso fornece uma base sólida para profissionais que desejam entrar no campo do processamento de Big Data usando tecnologias Hadoop e MapReduce. Há, de início, uma introdução à fundamentos do Hadoop, sua estrutura de funcionamento do framework. Depois, é ensinado o paradigma de programação MapReduce e como ele é usado para processar dados em clusters do Hadoop. Também é explorado o HDFS (Hadoop Distributed File System) para armazenação de grandes volumes de dados e gerenciamento desses dados.
+
+### Spark
+* Formação Spark com Pyspark: O curso aborda desde a instalação e configuração do ambiente Spark até a exploração de conceitos fundamentais, como RDDs e DataFrames, além de ensinar transformações e ações para manipulação de dados. Também é ensinado a integrar o Spark com diversas fontes de dados, lidar com processamento em lote e em streaming, e explorar o ecossistema Spark com a linguagem Python.
+
+### Tarefa: Apache Spark - Contador de Palavras
+O conteúdo dessa atividade pode ser acessado por meio [deste link do Google Colab.](https://colab.research.google.com/drive/102mt2GBW_v7StN9aTHjCPnOvV4nkCWSK?usp=sharing)
+
+### Tarefa: Desafio Parte 1 - ETL
+Segue os comandos necessário para execução da imagem Docker no caminho *Sprint7/desafio_ETL/* desse repositório:
+```
+docker build -t desafio_etl .
+```
+Após isso, execute o comando para rodar o *container* com volume (as chaves de acesso serão informadas somente ao rodar o container por motivos de segurança):
+```
+docker run --name etl -v dados:/app -e AWS_ACCESS_KEY_ID=[insira sua chave de acesss] -e AWS_SECRET_ACCESS_KEY=[insira sua chave de acesso secreta] desafio_etl
+```
+
 </details>
