@@ -163,3 +163,22 @@ docker run --name etl -v dados:/app -e AWS_ACCESS_KEY_ID=[insira sua chave de ac
 ```
 
 </details>
+
+<details>
+<summary>Sprint 8</summary>
+
+## Sprint 8
+### Tarefa 2 - Desafio Parte 2
+Primeiramente, criei um layer no AWS Lambda para utilizar todas as bibliotecas necessárias para rodar o código, incluindo Pandas, NumPy e Requests para uso da API do TMDB. O arquivo zip utilizado no layer se encontra no caminho *Sprint8/Tarefa2* deste repositório.
+
+Após criar o layer e criar uma nova função no AWS Lambda para Python versão 3.11, realizei o teste do código, apresentado no arquivo com caminho *Sprint8/Tarefa2/analisetmdb.py* deste repositório, com objetivo de acessar o Bucket do S3 criado no exercício prévio, baixar o arquivo movies.csv armazenado nesse Bucket e utilizar os IDs filtrados de filmes armazenados no CSV com nota maior de 5 e gênero Horror para realizar pesquisas no TMDB e retornar apenas os filmes que tenham um orçamento inferior a $500.000,00. O objetivo é analisar se há relação entre nota de avaliação e orçamento do filme.
+
+### Tarefa 3 - Geração de massa de dados
+Foi gerado todos os códigos que foram solicitados pela atividade, assim como o código python para gerar um arquivo txt de nome *nomes_aleatorios.txt* para ser usado na próxima tarefa.
+
+### Tarefa 4 - Apache Spark
+A tarefa foi realizada no Google Colab com o seguinte [link para acesso](https://colab.research.google.com/drive/1AF_4lGshGE32RO6s4RUR3HeOqubw_0rY?usp=sharing), e o arquivo ipynb também pode ser acessado no caminho *Sprint8/Tarefa3/nomesaleatorios.ipynb* nesse repositório. 
+
+Após instalação do pyspark e importação das bibliotecas necessárias, assim como inicialização do SparkSession, armazenei o conteúdo do arquivo txt gerado na tarefa anterior no *dataframe* de nome *df_nomes*. Renomeei a coluna do *dataframe* para *Nomes*, e adicionei, com valores aleatórios conforme solicitado na atividade, outras três colunas nomeadas *Escolaridade*, *Pais* e *AnoNascimento*. Em seguida, usei tanto o comando select() quanto *queries* de SQL para análise dos dados.
+
+</details>

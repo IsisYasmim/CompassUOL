@@ -3,7 +3,7 @@ import random
 
 random.seed(40)
 qtd_nomes_unicos = 3000
-qtd_nomes_aleatorios = 6099999
+qtd_nomes_aleatorios = 10000000
 
 aux = []
 

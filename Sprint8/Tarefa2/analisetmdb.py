@@ -31,9 +31,11 @@ def processar_lote(ids, headers):
             response = requests.get(url, headers=headers)
             data = response.json()
 
-            # filtra os filmes com budget abaixo de 100000 e maior que
-            if 0 < data['budget'] < 100000:
+            # filtra os filmes com budget abaixo de 500000 e maior que 0
+            if 0 < data['budget'] < 500000:
                 arqv = {'Titulo': data['title'],
+                        'Data de Lancamento': data['release_date'],
+                        'Popularidade': data['popularity'],
                         'Nota Media': data['vote_average'],
                         'Orcamento': data['budget']
                         }
@@ -53,10 +55,13 @@ def lambda_handler(event, context):
     response = s3.get_object(Bucket=bucket, Key=arquivo)
     movies_csv = io.BytesIO(response['Body'].read())
 
-# lê o movies.csv e armazena os ids de filmes com nota acima de 8 em uma lista
+    # lê o arquivo movies.csv
     df = pd.read_csv(movies_csv, sep='|', low_memory=False)
     df['notaMedia'] = df['notaMedia'].replace('\\N', float('nan'))
-    condicao = ((~df['notaMedia'].isna())
+
+    # define a condição para filtrar apenas filmes de gênero Horror
+    condicao = (df['genero'].str.contains('Horror', case=False)
+                & (~df['notaMedia'].isna())
                 & (df['notaMedia'].astype(float) > 8))
 
     ids = sorted(set(df.loc[condicao, 'id'].tolist()))
