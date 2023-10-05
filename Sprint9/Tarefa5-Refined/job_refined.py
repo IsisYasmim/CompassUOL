@@ -1,5 +1,3 @@
-# segue abaixo o codigo usado no AWS Glue no job pra camada Refined
-
 import sys
 from awsglue.transforms import *
 from awsglue.utils import getResolvedOptions
@@ -26,9 +24,11 @@ dyf_filmes = glueContext.create_dynamic_frame.from_options(
 
 # registrando apenas o ano do lançamento dos filmes
 df_ano = dyf_filmes.toDF().withColumn("ano", substring(col("data_de_lancamento"), 1, 4)).selectExpr("ano").withColumn("ano",col("ano").cast(IntegerType()))
+df_ano = df_ano.repartition(1)
 
 # registrando apenas a nota media dos filmes
 dyf_notamedia = dyf_filmes.drop_fields(['data_de_lancamento','titulo','popularidade','orcamento','id'])
+df_notamedia = dyf_notamedia.toDF().repartition(1)
 
 # registrando os orçamentos medios e notas medias de agrupados por ano
 df_media_por_ano = dyf_filmes.toDF() \
@@ -37,58 +37,34 @@ df_media_por_ano = dyf_filmes.toDF() \
              expr('avg(orcamento)').alias('orcamento_medio')) \
         .selectExpr('ano', 'nota_media', 'orcamento_medio') \
         .withColumn("ano",col("ano").cast(IntegerType()))
+df_media_por_ano = df_media_por_ano.repartition(1)
 
 # convertendo DataFrame para DynamicFrame
 dyf_media_por_ano = DynamicFrame.fromDF(df_media_por_ano, glueContext, 'dyf_media_por_ano')
 dyf_ano = DynamicFrame.fromDF(df_ano, glueContext, 'dyf_ano')
+dyf_notamedia = DynamicFrame.fromDF(df_notamedia, glueContext, 'dyf_notamedia')
 
 # escrevendo o parquet de dyf_ano na camada Refined
-escrever_parquet_ano = glueContext.getSink(
-    path="s3://desafio-etl-isis/Refined/",
-    connection_type="s3",
-    updateBehavior="UPDATE_IN_DATABASE",
-    partitionKeys=[],
-    compression="gzip",
-    enableUpdateCatalog=True,
-    transformation_ctx="escrever_parquet_ano",
-)
-escrever_parquet_ano.setCatalogInfo(
-    catalogDatabase="desafio-etl", catalogTableName="dim_ano"
-)
-escrever_parquet_ano.setFormat("glueparquet")
-escrever_parquet_ano.writeFrame(dyf_ano)
+glueContext.write_dynamic_frame.from_options(
+        frame = dyf_ano,
+        connection_type = "s3",    
+        connection_options = {"path": "s3://desafio-etl-isis/Refined/"},
+        format = "glueparquet")
+
 
 # escrevendo o parquet de dyf_notamedia na camada Refined
-escrever_parquet_notamedia = glueContext.getSink(
-    path="s3://desafio-etl-isis/Refined/",
-    connection_type="s3",
-    updateBehavior="UPDATE_IN_DATABASE",
-    partitionKeys=[],
-    compression="gzip",
-    enableUpdateCatalog=True,
-    transformation_ctx="escrever_parquet_notamedia",
-)
-escrever_parquet_notamedia.setCatalogInfo(
-    catalogDatabase="desafio-etl", catalogTableName="dim_notamedia"
-)
-escrever_parquet_notamedia.setFormat("glueparquet")
-escrever_parquet_notamedia.writeFrame(dyf_notamedia)
+glueContext.write_dynamic_frame.from_options(
+        frame = dyf_notamedia,
+        connection_type = "s3",    
+        connection_options = {"path": "s3://desafio-etl-isis/Refined/"},
+        format = "glueparquet")
 
 # escrevendo o parquet de dyf_media_por_ano na camada Refined
-escrever_parquet_mediaorcamento = glueContext.getSink(
-    path="s3://desafio-etl-isis/Refined/",
-    connection_type="s3",
-    updateBehavior="UPDATE_IN_DATABASE",
-    partitionKeys=[],
-    compression="gzip",
-    enableUpdateCatalog=True,
-    transformation_ctx="escrever_parquet_mediaorcamento",
-)
-escrever_parquet_mediaorcamento.setCatalogInfo(
-    catalogDatabase="desafio-etl", catalogTableName="fato_orcamento"
-)
-escrever_parquet_mediaorcamento.setFormat("glueparquet")
-escrever_parquet_mediaorcamento.writeFrame(dyf_media_por_ano)
+glueContext.write_dynamic_frame.from_options(
+        frame = dyf_media_por_ano,
+        connection_type = "s3",    
+        connection_options = {"path": "s3://desafio-etl-isis/Refined/"},
+        format = "glueparquet")
 
 
 job.commit()

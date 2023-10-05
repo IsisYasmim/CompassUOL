@@ -182,3 +182,28 @@ A tarefa foi realizada no Google Colab com o seguinte [link para acesso](https:/
 Após instalação do pyspark e importação das bibliotecas necessárias, assim como inicialização do SparkSession, armazenei o conteúdo do arquivo txt gerado na tarefa anterior no *dataframe* de nome *df_nomes*. Renomeei a coluna do *dataframe* para *Nomes*, e adicionei, com valores aleatórios conforme solicitado na atividade, outras três colunas nomeadas *Escolaridade*, *Pais* e *AnoNascimento*. Em seguida, usei tanto o comando select() quanto *queries* de SQL para análise dos dados.
 
 </details>
+
+<details>
+<summary>Sprint 9</summary>
+
+## Sprint 9
+### Tarefa 1 - Modelagem Relacional
+Após fazer o planejamento da modelagem por meio do MySQL Workbench, com o arquivo e print das tabelas disponível no caminho *Sprint9/Tarefa1-Modelagem_Relacional* desse repositório, criei o script SQL e normalizei o banco de dados original pelo programa DBeaver, o script pode ser acessado no caminho *Sprint9/Tarefa1-Modelagem_Relacional/script_normalizacao.sql* desse repositório.
+
+### Tarefa 2 - Modelagem Dimensional
+Repeti o mesmo procedimento da tarefa anterior, fazendo a modelagem previamente pelo MySQL Workbench com print das tabelas podendo ser acessado pelo caminho *Sprint9/Tarefa2-Modelagem_Dimensional*, assim como o script SQL feito para criar as views.
+
+### Tarefa 3 - Camada Trusted
+Criei, manualmente, uma camada Trusted no bucket do S3, e pelo AWS Glue fiz um job com o objetivo de armazenar o JSON criado na sprint anterior primeiro em um DataFrame e, após isso, transformá-lo em um DynamicFrame para ser efetuado um tratamento de dados, removendo notas de filmes que sejam iguais à 0. Esse DynamicFrame foi então convertido em parquet, adicionado à camada Trusted no Bucket do S3 e foi atualizado no catálogo do AWS Glue como uma nova tabela.
+
+O código feito no AWS Glue pode ser visto no caminho *Sprint9/Tarefa3-Trusted/job_trusted.py*, assim como o arquivo parquet gerado pelo job.
+
+### Tarefa 4 - Dimensionamento Refined
+Fiz o dimensionamento pelo MySQL Workbench e as tabelas foram criadas no catálogo do AWS Glue com um Crawler para cada parquet, que foi separado em pastas para cada tabela. Os prints podem ser acessados no caminho *Sprint9/Tarefa4-Modelagem_Refined*.
+
+### Tarefa 5 - Processamento Refined
+Criei um job no AWS Glue para criar um DynamicFrame a partir do parquet da camada Trusted gerado na Tarefa 3, o código funciona criando um DataFrame para cada tabela do modelo dimensional, fazendo os devidos cálculos necessários para análise. Após isso, é adicionado na camada Refined, em pastas separadas, cada parquet de cada tabela. Usei Crawlers para registrar os dados em tabelas no catálogo.
+
+Para facilitar a testagem do job e evitar gastos desnecessários, modifiquei um código existente na internet que possibilita o uso da biblioteca do Glue no Google Colab, sem custos adicionais. O código pode ser acessado por [esse link.](https://gist.github.com/IsisYasmim/a9734ee8b3db1f8dee988c32ee5d345e)
+
+</details>
