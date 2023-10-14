@@ -18,7 +18,7 @@ desenvolvido em Flutter.
 
 <img align = "right" width="125" height="125" hspace="3" src="https://i.imgur.com/9KmYrKv.jpg">
 
-Tenho vários hobbies aleatórios, como jogos, animes, costura e cubos mágicos; de vez em quando faço cosplay. Sou apaixonada pela cor rosa e por gatinhos! Também sou seguidora fiel de Kant e tento aplicar o conceito de imperativo categórico onde possível.
+Tenho vários hobbies aleatórios, como jogos, animes, costura e cubos mágicos; de vez em quando faço cosplay. Sou apaixonada pela cor rosa e por gatinhos!
  
 Ao lado mostro a minha coleção de cubos mágicos!
 
@@ -207,3 +207,16 @@ Criei um job no AWS Glue para criar um DynamicFrame a partir do parquet da camad
 Para facilitar a testagem do job e evitar gastos desnecessários, modifiquei um código existente na internet que possibilita o uso da biblioteca do Glue no Google Colab, sem custos adicionais. O código pode ser acessado por [esse link.](https://gist.github.com/IsisYasmim/a9734ee8b3db1f8dee988c32ee5d345e)
 
 </details>
+
+<details>
+<summary>Sprint 10</summary>
+
+### Desafio - Parte IV
+No começo da sprint, seguindo o conselho da instrutora Isabela, mudei o foco da minha análise e usei um [dataset do Kaggle](https://www.kaggle.com/datasets/stefanoleone992/rotten-tomatoes-movies-and-critic-reviews-dataset?select=rotten_tomatoes_movies.csv) com lista de diretores por filme para fazer uma análise a partir de dados específicos dos diretores pela API do TMDB. O novo algoritmo para chamada da API e os arquivos json gerados estão no diretório *Sprint8*; os jobs atualizados, assim como a modelagem nova de análise, estão disponíveis no diretório da *Sprint9*.
+
+A partir dos parquets gerados para a nova análise, criei um DashBoard no QuickSight com o objetivo de analisar o faturamento, nota média e popularidade de filmes de terror categorizados por gênero do(s) diretor(es), considerando Feminino e Masculino. A partir desses dados, foi possível visualizar uma diferença clara entre o faturamento (receita) dos filmes quando analisados por gênero, embora a nota e a popularidade não tenham uma discrepância tão acentuada. Os arquivos PDFs gerados a partir do Dashboard podem ser acessados no diretório da *Sprint10*.
+
+</details>
+
+# Considerações finais
+A participação nesse programa de bolsas foi crucial pro meu desenvolvimento pessoal e profissional. Aprendi conteúdos técnicos que há muito tempo queria aprender e adquiri um novo fascínio por essa área, que é o processo de extração e análise de dados; além disso, a oportunidade de trabalhar/estudar em equipe e conhecer pessoas de diversas áreas do Brasil foi interessante e bastante enriquecedora. Muito obrigada!
