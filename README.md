@@ -2,7 +2,7 @@
 # Sobre mim
 Olá! Meu nome é Ísis Yasmim, tenho 23 anos e venho de Manaus mas atualmente resido na cidade de Medianeira, no oeste do Paraná. 
 
-Faço o curso de __ciência da computação__ na UTFPR, e estou no terceiro período. Minha experiência na área
+Faço o curso de __ciência da computação__ na UTFPR, e estou no quarto período. Minha experiência na área
 consiste em um projeto de conclusão de curso do ensino médio técnico que desenvolvi em Java e
 utilizando o MySQL, e também um projeto de iniciação científica apresentado no _SEI/SICITE_ de 2022,
 desenvolvido em Flutter.
